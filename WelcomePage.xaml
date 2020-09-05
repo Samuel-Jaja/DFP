@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PoastSuite.WelcomePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="DarkGray">
+                <Grid Margin="0,0,0,0" VerticalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Padding="10" Grid.Row="0" BackgroundColor="Black">
+                        <Label x:Name="LabelHelloFriend" Text="Hello Friend" FontSize="32" TextColor="White" FontAttributes="Bold"/>
+                        <Label x:Name="LabelPostSuite" Text="Department of Chemical Engineering " FontSize="22" FontAttributes="Bold" TextColor="Yellow"/>
+                        <Label Text="POAST Suite 1.0                     " FontSize="32" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Developed by Prof A.O Kuye U2015 Project Students" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="White" FontAttributes="Bold"  />
+                        <Label Text=" Iruoma Onyia || Samuel Jaja || Kelechi Orji || Belem Aaron " HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="White" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" University of Port Harcourt © 2020 " HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="White" FontSize="12" FontAttributes="Bold"/>
+                        
+                    </StackLayout>
+                    <StackLayout Padding="10" Grid.Row="1" BackgroundColor="Black">
+                        <Label Text="Welcome to Multi-Dimensional Unconstrained Optimization Module" FontSize="30" FontAttributes="Bold" TextColor="Yellow"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2">
+                        <!--<Picker Margin="0,10" Title="Select an Option" HeightRequest="50" FontSize="18" FontAttributes="Bold"  >
+                            <Picker.Items>
+                                <x:String >Search Method</x:String>
+                                <x:String>Gradient Method</x:String>
+                            </Picker.Items>
+                        </Picker>-->
+                        <StackLayout BackgroundColor="Black">
+                            <Label Text="Please select an Optimization Module" 
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="20"/>
+                            <Grid Margin="0,0,0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="4*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label  Text="Davidon Fletcher Powell" FontSize="19" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" Margin="18,0,0,0" TextColor="White"/>
+                                <CheckBox x:Name="DfpCheckbox" Grid.Row="2" Grid.Column="3" CheckedChanged="Dfpcheckbox_CheckedChanged" IsEnabled="True"/>
+
+                                <Label Text="Hookes and Jeeves" FontSize="19" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" Margin="18,0,0,0" TextColor="White"/>
+                                <CheckBox x:Name="hookesandjeevesCheckbox" Grid.Row="0" Grid.Column="3" IsEnabled="True"/>
+
+                                <Label Text="Nelder and Mead" FontSize="19" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" Margin="18,0,0,0" TextColor="White"/>
+                                <CheckBox x:Name="neldermeadcheckbox" Grid.Row="1" Grid.Column="3" IsEnabled="True"/>
+
+                                <Label Text="Flectcher and Reeves" FontSize="19" Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" Margin="18,0,0,0" TextColor="White"/>
+                                <CheckBox x:Name="flectherandreevescheckbox" Grid.Row="3" Grid.Column="3" IsEnabled="True"/>
+                            </Grid>
+                            <Label x:Name="lblCheckeddpf" Text="" FontSize="17"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3" Margin=" 50,-1">
+                        <Button x:Name="WelcomeStartTechniqueButton" Text="Start Module" TextColor="White" IsEnabled="True" CornerRadius="20" BackgroundColor="Black"  FontSize="20" FontAttributes="Bold" Clicked="WelcomeStartTechniqueButton_Clicked" Margin="0,0,0,10" />
+                        <Button x:Name="WelcomeLogoutButton" Text="LOGOUT" TextColor="White" IsEnabled="True" CornerRadius="20" BackgroundColor="Black"  FontSize="20" FontAttributes="Bold" Clicked="WelcomeLogoutButton_Clicked" />
+                    </StackLayout>
+                </Grid>
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

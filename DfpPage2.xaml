@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PoastSuite.DfpPage2">
+    <ScrollView>
+
+        <StackLayout BackgroundColor="White" Margin="10">
+            <StackLayout BackgroundColor="Black">
+                <Label Text="POAST Suite 1.0                DFP MODULE" HorizontalOptions="CenterAndExpand" 
+                       TextColor="Yellow"
+                       FontAttributes="Bold" FontSize="33" Margin="4"/>
+
+            </StackLayout>
+
+            <Label Text="QUESTION" HorizontalOptions="CenterAndExpand"
+                       TextColor="Red" FontAttributes="Bold" FontSize="22"
+                       />
+            <Label Text="Using the generic Model:" 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Start"/>
+            <Label Text="Min  Ax1^2 + Bx1 + Cx1x2 + Dx2 + Ex2^2 + F " 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Start"/>
+            <Label Text=" Solve by DFP Method: " 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="5,0,0,0"
+                   HorizontalTextAlignment="Start"/>
+            <Label Text=" Minimize f(x) =  1.5(x1)^2 + 0.5(x2)^2 - (x1)(x2) - 2(x1)" 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="5,0,0,0"
+                   HorizontalTextAlignment="Start"/>
+            <Label Text=" Staring at Point X1 >>> [x1,x2]  =  [-2,4]" 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="5,0,0,0"
+                   HorizontalTextAlignment="Start"/>
+
+            <StackLayout>
+                <StackLayout BackgroundColor="Black">
+                    <Label Text="Enter Equation f(x) Coefficients"  TextColor="White" FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center"></Label>
+
+                </StackLayout>
+
+                <Entry x:Name="EntryA" Placeholder="Enter value of A" Margin="0,-7,50,0" />
+                <Entry x:Name="EntryB" Placeholder="Enter value of B" Margin="0,-10,50,0" />
+                <Entry x:Name="EntryC" Placeholder="Enter value of C" Margin="0,-10,50,0" />
+                <Entry x:Name="EntryD" Placeholder="Enter value of D" Margin="0,-10,50,0" />
+                <Entry x:Name="EntryE" Placeholder="Enter value of E" Margin="0,-10,50,0" />
+                <Entry x:Name="EntryF" Placeholder="Enter value of F" Margin="0,-10,50,0" />
+                <Entry x:Name="Fx" Placeholder="Fx" Margin="0,-10,50,0" />
+
+
+            </StackLayout>
+
+
+            <Button x:Name="SolveButton" BorderWidth="4" BorderColor="Yellow" Text="SOLVE" IsEnabled="True" Margin="50,0,50,0" CornerRadius="20"
+                        FontAttributes="Bold"
+                        FontSize="20"  BackgroundColor="Black" TextColor="Yellow" Clicked="SolveButton_Clicked"
+                         />
+            <Button x:Name="BackButtonInputCoefPage" BorderWidth="4" BorderColor="Yellow" Text="BACK" IsEnabled="True" Margin="50,0,50,0" CornerRadius="20"
+                        FontAttributes="Bold"
+                        FontSize="20"  BackgroundColor="Black" TextColor="Yellow"  Clicked="BackButtonInputCoefPage_Clicked"
+                         />
+            <Label Text="Developed by Samuel Jaja || Supervised by Prof A.O Kuye" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="Black" Margin="5"/>
+
+        </StackLayout>
+
+    </ScrollView>
+       
+</ContentPage>

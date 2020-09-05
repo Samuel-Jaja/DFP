@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PoastSuite.DfpPage3">
+    <ScrollView>
+
+        <StackLayout BackgroundColor="White" Margin="10">
+            <StackLayout BackgroundColor="Black">
+                <Label Text="POAST Suite 1.0               DFP MODULE" HorizontalOptions="CenterAndExpand" 
+                       TextColor="Yellow"
+                       FontAttributes="Bold" FontSize="33" Margin="4"/>
+
+            </StackLayout>
+
+            <Label Text="QUESTION" HorizontalOptions="CenterAndExpand"
+                       TextColor="Red" FontAttributes="Bold" FontSize="28"
+                       />
+            <Label Text="Using the generic Model:" 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Start"/>
+            <Label Text="Min  Ax1^2 + Bx1 + Cx1x2 + Dx2 + Ex2^2 + F " 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Start"/>
+            <Label Text=" Solve by DFP Method: " 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="5,0,0,0"
+                   HorizontalTextAlignment="Start"/>
+            <Label Text=" Minimize f(x) =  1.5(x1)^2 + 0.5(x2)^2 - (x1)(x2) - 2(x1)" 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="5,0,0,0"
+                   HorizontalTextAlignment="Start"/>
+            <Label Text=" Staring at Point X1 >>> [x1,x2]  =  [-2,4]" 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="5,0,0,0"
+                   HorizontalTextAlignment="Start"/>
+
+            <StackLayout Margin="0,0,0,0">
+                <StackLayout BackgroundColor="Black">
+                    <Label Text="1ST - ITERATION"  TextColor="White" FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center"></Label>
+                </StackLayout>
+               
+
+                <Label  Text="Gradient Vector [g1]" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"  />
+                <Entry x:Name="Userg1x1" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="Userg1x2" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+
+                <Label Text="Search Direction [S1]"  HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" />
+                <Entry x:Name="Users1x1"   Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="Users1x2"   Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+
+                <Label  Text="Lambda [λ1]" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" />
+                <Entry x:Name="UserL1" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+
+                <Label Text="New Starting Point [X2]"  HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" />
+                <Entry x:Name="UserX2x1" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="UserX2x2" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+
+                <Label  Text="Grade" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" />
+                <Entry x:Name="UserGrade" Margin="50,0,50,0" HorizontalTextAlignment="Center" />
+
+
+                <StackLayout Margin="20,-10,20,0">
+                    <Button x:Name="NextIterationButton" BorderWidth="4" BorderColor="Yellow" Text="Next Iteration" IsEnabled="True" CornerRadius="20"  Margin="50,0"
+                        FontAttributes="Bold"
+                        FontSize="20" BackgroundColor="Black" TextColor="Yellow" Clicked="NextIterationButton_Clicked"
+                         />
+                    <Button x:Name="BackButtonIterationOnePage" BorderWidth="4" BorderColor="Yellow" Text="BACK" IsEnabled="True"  CornerRadius="20"  Margin="50,0"
+                        FontAttributes="Bold"
+                        FontSize="20" BackgroundColor="Black" TextColor="Yellow" Clicked="BackButtonIterationOnePage_Clicked"
+                         />
+
+                </StackLayout>
+
+
+            </StackLayout>
+
+
+            <Label Text="Developed by Samuel Jaja || Supervised by Prof A.O Kuye" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="Black" Margin="5"/>
+        </StackLayout>
+
+
+    </ScrollView>
+   
+
+</ContentPage>

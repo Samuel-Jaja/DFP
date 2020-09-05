@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PoastSuite.DfpPage5">
+    <StackLayout BackgroundColor="White" Margin="10">
+        <StackLayout BackgroundColor="Black">
+            <Label Text="POAST Suite 1.0            DFP MODULE" HorizontalOptions="CenterAndExpand" 
+                       TextColor="Yellow"
+                       FontAttributes="Bold" FontSize="33" Margin="4"/>
+        </StackLayout>
+       
+        <Label Text="QUESTION" HorizontalOptions="CenterAndExpand"
+                       TextColor="Red" FontAttributes="Bold" FontSize="28"
+                       />
+        <Label Text="Using the generic Model:" 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Start"/>
+        <Label Text="Min  Ax1^2 + Bx1 + Cx1x2 + Dx2 + Ex2^2 + F " 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Start"/>
+        <Label Text=" Solve by DFP Method: " 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="5,0,0,0"
+                   HorizontalTextAlignment="Start"/>
+        <Label Text=" Minimize f(x) =  1.5(x1)^2 + 0.5(x2)^2 - (x1)(x2) - 2(x1)" 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="5,0,0,0"
+                   HorizontalTextAlignment="Start"/>
+        <Label Text=" Staring at Point X1 >>> [x1,x2]  =  [-2,4]" 
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="5,0,0,0"
+                   HorizontalTextAlignment="Start"/>
+
+        <StackLayout Margin="0,60,0,0">
+            <Label Text="3RD -  ITERATION OUPUT"  TextColor="Black" FontAttributes="Bold" FontSize="25" HorizontalTextAlignment="Center"></Label>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Text="New Starting Point [X3]" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="15" VerticalOptions="Center"  />
+                <Entry  Grid.Row="0" Grid.Column="3" />
+                <Entry  Grid.Row="0" Grid.Column="2" />
+
+                <Label Text="Gradient Vector [g3]" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="15" VerticalOptions="Center" />
+                <Entry Grid.Row="1" Grid.Column="3" />
+                <Entry Grid.Row="1" Grid.Column="2" />
+
+                <Label Text="Search Direction [S3]" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="15" VerticalOptions="Center" />
+                <Entry Grid.Row="2" Grid.Column="2" />
+                <Entry Grid.Row="2" Grid.Column="3" />
+
+                <Label Text="Lambda [L3]" Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="15" VerticalOptions="Center" />
+                <Entry Grid.Row="3" Grid.Column="2" />
+
+            </Grid>
+            <StackLayout Margin="20,-100,20,0">
+                <Button x:Name="Next3rdIterationButton" BorderWidth="4" BorderColor="Yellow" Text="Next Iteration" IsEnabled="True" CornerRadius="20"  Margin="50,0"
+                        FontAttributes="Bold"
+                        FontSize="20" BackgroundColor="Black" TextColor="Yellow" Clicked="Next3rdIterationButton_Clicked"
+                         />
+                <Button x:Name="BackButtonIterationThreePage" BorderWidth="4" BorderColor="Yellow" Text="BACK" IsEnabled="True"  CornerRadius="20"  Margin="50,0"
+                        FontAttributes="Bold"
+                        FontSize="20" BackgroundColor="Black" TextColor="Yellow" Clicked="BackButtonIterationThreePage_Clicked"
+                         />
+
+            </StackLayout>
+        </StackLayout>
+        <Label Text="Developed by Samuel Jaja || Supervised by Prof A.O Kuye" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="Black" Margin="5"/>
+    </StackLayout>
+</ContentPage>

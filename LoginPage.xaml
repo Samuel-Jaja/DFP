@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PoastSuite.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Margin="20,0,20,0" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0">
+                    <Label Text="Login User Account"
+                   TextColor="Black"
+                   FontSize="35" FontAttributes="Bold"
+                   Margin="20"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+
+                    <Entry Placeholder="Username" FontSize="19" x:Name="Entryusername" IsTextPredictionEnabled="True" IsSpellCheckEnabled="True" ClearButtonVisibility="WhileEditing" />
+                </StackLayout>
+                <StackLayout Grid.Row="1">
+                    <Entry Placeholder="Password" IsPassword="True" FontSize="19" x:Name="Entrypassword"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="4">
+                    <Button x:Name="LoginButton" Text="Log In" FontSize="20" TextColor="Yellow"  BackgroundColor="Black" IsEnabled="True" CornerRadius="20" FontAttributes="Bold" Clicked="LoginButton_Clicked"/>
+                    <Button x:Name="SignUpButton" IsEnabled="True" CornerRadius="20" Text="Sign up" FontSize="20" TextColor="Yellow"  BackgroundColor="Black" FontAttributes="Bold" Clicked="SignUpButton_Clicked"/>
+                    <Label  Text="Login with Facebook or Google"
+                           HorizontalOptions="Center"
+                           FontSize="16"
+                           TextColor="Black"
+                           FontAttributes="Italic"/>
+                </StackLayout>
+            </Grid>
+            <Label Text=" Project Work U2015 - © 2020 " HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="Black" FontSize="12"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

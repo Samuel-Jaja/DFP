@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PoastSuite.DfpPage">
+    
+    <ContentPage.Content>
+        
+
+            <StackLayout  Margin="10">
+                <StackLayout BackgroundColor="Black">
+                    <Label Margin="5" Text="POAST Suite 1.0               DFP MODULE" HorizontalOptions="CenterAndExpand" 
+                               TextColor="Yellow"
+                               FontAttributes="Bold" FontSize="32"/>
+
+                </StackLayout>
+                <Label Text="OPTIMIZATION  ||  MINIMIZATION PROBLEMS  ||  GRADIENT METHODS" 
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="0"
+                       HorizontalTextAlignment="Center"/>
+                <StackLayout BackgroundColor="Black">
+
+
+                    <Label Text="Davidon-Fletcher-Powell Module" HorizontalOptions="CenterAndExpand"
+                           TextColor="White" FontAttributes="Bold" FontSize="25"
+                           />
+
+                </StackLayout>
+
+
+                <Label Text="Please Select a Question" 
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="Red"
+                   Margin="0"
+                   HorizontalTextAlignment="Center"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*"/>
+
+
+                    </Grid.ColumnDefinitions>
+
+                    <Label  Text="Question 1" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" Margin="40,0,0,0"/>
+                    <CheckBox x:Name="Question1CheckBox" Grid.Row="0" Grid.Column="3"  />
+
+                    <Label Text="Question 2" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" Margin="40,0,0,0"/>
+                    <CheckBox Grid.Row="1" Grid.Column="3"/>
+
+                    <Label Text="Question 3" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" Margin="40,0,0,0"/>
+                    <CheckBox Grid.Row="2" Grid.Column="3"/>
+
+                    <Label Text="Question 4" Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" Margin="40,0,0,0"/>
+                    <CheckBox Grid.Row="3" Grid.Column="3"/>
+
+                    <Label Text="Question 5" Grid.Row="4" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" Margin="40,0,0,0"/>
+                    <CheckBox Grid.Row="4" Grid.Column="3"/>
+
+                    <Label Text="Question 6" Grid.Row="5" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" Margin="40,0,0,0"/>
+                    <CheckBox Grid.Row="5" Grid.Column="3"/>
+
+                    <Label Text="Question 7" TextColor="Black" FontAttributes="Bold" FontSize="18" Grid.Row="6" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" Margin="40,0,0,0"/>
+                    <CheckBox Grid.Row="6" Grid.Column="3"/>
+
+                    <Label Text="Question 8" Grid.Row="7" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" Margin="40,0,0,0"/>
+                    <CheckBox Grid.Row="7" Grid.Column="3"/>
+
+                    <Label Text="Question 9" Grid.Row="8" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" Margin="40,0,0,0"/>
+                    <CheckBox Grid.Row="8" Grid.Column="3"/>
+
+                    <Label Text="Question 10" Grid.Row="9" Grid.Column="0" HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" Margin="40,0,0,0"/>
+                    <CheckBox Grid.Row="9" Grid.Column="3"/>
+                </Grid>
+
+                <Button x:Name="NextButtonSelectionQuestionPage" BorderWidth="4" BorderColor="Yellow" Text="NEXT" IsEnabled="True" Margin="50,10,50,10" CornerRadius="20"
+                        FontAttributes="Bold"
+                        FontSize="20" BackgroundColor="Black" TextColor="Yellow" Clicked="NextButtonSelectionQuestionPage_Clicked"
+                         />
+
+                <Button x:Name="BackButtonSelectQuestionPage" BorderWidth="4" BorderColor="Yellow" Text="BACK" IsEnabled="True" Margin="50,10,50,10" CornerRadius="20"
+                        FontAttributes="Bold"
+                        FontSize="20" BackgroundColor="Black" TextColor="Yellow" Clicked="BackButtonSelectQuestionPage_Clicked"
+                         />
+
+                <Label Text="Developed by Samuel Jaja || Supervised by Prof A.O Kuye" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="Black" Margin="5"/>
+
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

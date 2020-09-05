@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PoastSuite.RegistrationPage">
+    <ContentPage.Content>
+        <StackLayout >
+            <Grid Margin="20,0,20,0" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0">
+                    <Label Text="Register Account"
+                   TextColor="Black"
+                   FontSize="35" FontAttributes="Bold"
+                   Margin="20"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+
+                    <Entry Placeholder="Username" FontSize="19" x:Name="Entryusername" IsTextPredictionEnabled="True" IsSpellCheckEnabled="True" ClearButtonVisibility="WhileEditing"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1">
+                    <Entry Placeholder="Password" IsPassword="True" FontSize="19" x:Name="Entrypassword"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2">
+                    <Entry Placeholder="Email" Keyboard="Email" FontSize="19" x:Name="Entryemail" IsTextPredictionEnabled="True" IsSpellCheckEnabled="True" ClearButtonVisibility="WhileEditing"/>
+                </StackLayout>
+                <StackLayout Grid.Row="3">
+                    <Entry Placeholder="Matric No: U20--/3030---" FontSize="19" x:Name="Entrymatricno" IsTextPredictionEnabled="True" IsSpellCheckEnabled="True" ClearButtonVisibility="WhileEditing"/>
+                </StackLayout>
+                <StackLayout Grid.Row="4">
+                    <Button x:Name="RegisterButton" Text="Register" FontSize="22" TextColor="Yellow"  BackgroundColor="Black" FontAttributes="Bold" Margin="0,0,0,20" Clicked="RegisterButton_Clicked" IsEnabled="True" CornerRadius="20"/>
+                    <Label  Text="Already have an Account?"
+                           HorizontalOptions="Center"
+                           FontSize="16"
+                           TextColor="Black"
+                           FontAttributes="Italic"/>
+                    <Button x:Name="RegisterSignInButton" Text="Sign in" TextColor="Yellow" FontSize="23" IsEnabled="True" CornerRadius="20" BackgroundColor="Black" FontAttributes="Bold" Clicked="RegisterSignInButton_Clicked"  />
+                </StackLayout>
+                <StackLayout Grid.Row="5">
+                    <Image x:Name="registerImage"
+                               Aspect="AspectFit"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand"
+                               />
+                </StackLayout>
+            </Grid>
+            <Label Text="Developed by Prof A.O Kuye Project Students © 2020" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="Black"/>
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

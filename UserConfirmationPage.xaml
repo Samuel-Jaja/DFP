@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PoastSuite.UserConfirmationPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Frame HeightRequest="100" BorderColor="Black">
+                <StackLayout>
+                    <Label Text="POAST Suite1.0               User Confirmation Page " TextColor="Black"
+                           FontSize="30"
+                           FontAttributes ="Bold"
+                           />
+
+                </StackLayout>
+            </Frame>
+            <Label Text="Please Confirm Registration Details" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center"  />
+            <Label x:Name="EntryConfirmUsername" Text=" " TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Label x:Name="EntryConfirmEmail" Text="" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Label x:Name="EntryConfirmNatnumber" Text=" " TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>
+
+            <StackLayout >
+                <Button x:Name="ConfirmButton" Text="CONFIRM" CornerRadius="20" FontSize="25"  FontAttributes="Bold" TextColor="Yellow" BackgroundColor="Black" Margin="0,80" IsEnabled="True" BorderWidth="3" Clicked="ConfirmButton_Clicked" />
+            </StackLayout>
+
+            <StackLayout Margin="0,70,0,0">
+                <Label Text="University of Port Harcourt - Department of Chemical Engineering" FontSize="11" HorizontalTextAlignment="Center" TextColor="Black"/>
+                <Label Text="U2015 Prof Kuye Project Students - © 2020" FontSize="11" HorizontalTextAlignment="Center" TextColor="Black"/>
+                <Label Text="Written in C# - Xamarin" FontSize="11" HorizontalTextAlignment="Center" TextColor="Black"/>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

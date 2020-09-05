@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PoastSuite.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0">
+                    <Label Text="POAST Suite 1.0"
+                   FontSize="Header"
+                   FontAttributes="Bold"    
+                   TextColor="Yellow"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   Margin="10"/>
+                    <Label Text="Process Optimization Automated Software Tool"
+                   FontAttributes="None"
+                   FontSize="19"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="Yellow"/>
+
+                </StackLayout>
+                <!--<StackLayout Grid.Row="1">
+                    <Image x:Name="iconImage"
+                       Aspect="AspectFit"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="0,0,0,30"/>
+
+                </StackLayout>-->
+                <StackLayout Grid.Row="2" Margin="80,150,80,50">
+                    <Label Text="Optimize With POAST"
+                       TextColor="Yellow"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"
+                       FontSize="Title"
+                           FontAttributes="Bold"
+                       />
+                    <Button x:Name="ContinueButton" Text="CONTINUE"
+                        FontAttributes="Bold"
+                        FontSize="20" BorderWidth="3" BorderColor="Yellow" IsEnabled="True" CornerRadius="20" Margin="0,0,0,5" Clicked="ContinueButton_Clicked" />
+                    <Button x:Name="ExitButton" BorderWidth="3" BorderColor="Yellow" Text="Exit" IsEnabled="True" Margin="0,0,0,5" CornerRadius="20"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        Clicked="ExitButton_Clicked" />
+                </StackLayout>
+                <StackLayout Grid.Row="3" Margin="20">
+                    <Label Text=" Iruoma Onyia || Samuel Jaja || Kelechi Orji || Belem Aaron " HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="White" FontSize="12" FontAttributes="Bold"/>
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+    
+
+</ContentPage>
